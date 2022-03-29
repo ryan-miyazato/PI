@@ -1,0 +1,23 @@
+.dA {
+    background-color: #9c27a7; 
+    width: 550px; 
+    height: 550px;
+}
+.dB {
+    background-color: #52ff61; height:40%; 
+    width: 40%;
+}
+.dC {
+    color: rgb(252, 117, 117); background-color: rgb(0, 204, 255);font-size: 40px; 
+    font-family: monospace; font-weight: 300;
+}
+.dD {
+    width: 70%; 
+    height: 55vh; 
+    background-color: rgb(67, 45, 82);
+}
+.dE {
+    width: 35vw; 
+    height: 50%; 
+    background-color: #87b157;
+}
