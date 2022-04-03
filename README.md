@@ -1,2 +1,2 @@
-# PI-Atv-CSS1
-Atividade de CSS 1 (PI) 
+# PI - CSS
+Atividades de CSS realizadas para a matéria de Pesquisa & Inovação.
