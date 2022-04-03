@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: monospace;
+}
+
+/* Começo do Header */
+
+.header {
+    border-bottom: 3px solid #00ffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.aqui{
+    font-weight: 1000;
+    font-size: 14px;
+}
+
+.titulo {
+    color: aqua;
+    width: fit-content;
+    font-weight: 1000;
+}
+
+.navBar {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    padding: 0;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Fim do Header */
+/* Começo do Banner */
+
+.banner {
+    background-image: url("imgs/bg-jelly-fish-para-home.png");
+    height: 500px;
+    color: #ffffff;
+    display: flex;
+}
+
+.banner .container p span {
+    font-weight: 1000;
+}
+
+.banner .container {
+    justify-content: center;
+}
+
+.banner .container p {
+    font-size: 36px;
+    width: 30%;
+}
+
+.banner .container .card1 {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+}
+
+.card1 input {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card1 button {
+    background-color: blueviolet;
+    margin-top: 20px;
+    font: 700 16px monospace;
+    color: white;
+}
+
+.card1 h1 {
+    font-size: 30px;
+}
+
+.card1 h4 {
+    font-size: 16px; 
+}
+
+.banner .container .card2 {
+    background-color: white;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+}
+
+.card2 input {
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card2 button {
+    background-color: blueviolet;
+    margin-top: 20px;
+    font: 700 16px monospace;
+    color: white;
+}
+
+.card2 h1 {
+    font-size: 30px;
+}
+
+.card2 h4 {
+    font-size: 16px; 
+}
+
+
+/* Fim do Banner */
+/* Começo do Social */
+
+.social {
+    background-color: #ffffff;
+    display: flex;
+    
+
+}
+
+.social .container .boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.boxes h3 {
+    font-weight: 900;
+}
+
+.social .container .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    width: 20%;
+}
+
+.social .container .boxes .box img {
+    width: 150px;
+}
+
+/* Fim do Social */
+/* Começo do Footer */
+
+.footer {
+    background-color: aqua;
+    height: 75px;
+    display: flex;
+}
+
+.footer .container {
+    justify-content: center;
+}
+
