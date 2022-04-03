@@ -103,13 +103,22 @@ a {
 
 .banner .container .card2 {
     background-color: white;
-    height: 450px;
-    width: 400px;
+    height: 400px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
     border-radius: 10px;
+}
+
+.card2 div {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    padding: 0; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card2 input {
