@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body style="display: flex;">
+    <div>
+        <canvas id="myChart" style="position: relative; height:32vh; width:32vw"></canvas>
+    </div>
+    <div>
+        <canvas id="myChart2" style="position: relative; height:32vh; width:32vw"></canvas>
+    </div>
+    <div>
+        <canvas id="myChart3" style="position: relative; height:16vh; width:16vw"></canvas>
+    </div>
+</body>
+
+<script>
+
+    // GRÁFICO 1 (MyChart)
+    const lab_horas = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+
+    const TempUmi_1 = {
+        labels: lab_horas,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: '#FF6384',
+            borderColor: '#FF6384',
+            data: [30, 29, 28, 25, 22, 23],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: '#36A2EB',
+            borderColor: '#36A2EB',
+            data: [80, 82, 80, 85, 80, 83],
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: TempUmi_1,
+        options: {}
+    };
+
+    // GRÁFICO 2 (MyChart2)
+    const lab_meses = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+    ];
+
+    const TempUmi_2 = {
+        labels: lab_meses,
+        datasets: [{
+            label: 'Temperatura Média',
+            backgroundColor: '#FF6384',
+            borderColor: '#FF6384',
+            data: [22, 24, 27, 23, 20, 18],
+        },
+        {
+            label: 'Umidade Média',
+            backgroundColor: '#36A2EB',
+            borderColor: '#36A2EB',
+            data: [90, 89, 93, 87, 88, 82],
+        }]
+    };
+
+    const config2 = {
+        type: 'bar',
+        data: TempUmi_2,
+        options: {}
+    };
+
+    // GRÁFICO 3 (MyChart3)
+    const lab_estacoes = [
+        'Verão',
+        'Outono',
+        'Inverno',
+        'Primavera',
+    ];
+
+    const TempUmi_3 = {
+        labels: lab_estacoes,
+        datasets: [{
+            label: 'Temperatura Média',
+            backgroundColor: ['#ff4336', '#ff913d', '#ffc42e', '#fff757' ],
+            hoverOffset: 4,
+            data: [29, 25, 20, 26]
+        }]
+    };
+
+    const config3 = {
+        type: 'doughnut',
+        data: TempUmi_3
+    };
+
+</script>
+
+<script>
+
+    // GRÁFICO 1
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    // GRÁFICO 2
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config2
+    );
+
+    // GRÁFICO 3
+    const myChart3 = new Chart(
+        document.getElementById('myChart3'),
+        config3
+    );
+
+</script>
+
+
+
+</html>
